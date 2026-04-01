@@ -160,7 +160,7 @@ The system being designed here is a **platform**, not just a single AI applicati
 ### LLM Cost Strategy: Subscription + API Hybrid
 
 | Task Category | Model | Billing |
-|---------------|-------|---------|
+|---------------|-------|---------| 
 | Complex: planning, code gen, research, evaluation | Claude via SDK | Flat-rate subscription |
 | Simple: parsing, classification, embedding | Claude Haiku API | Per-token (~$0.001/1K tokens) |
 | DSPy optimization | Claude Opus via SDK | Flat-rate subscription |
@@ -308,7 +308,7 @@ All dashboards are accessible from the start (deployed Week 1 alongside the firs
 
 See [doc 08: Unified Platform Architecture — Implementation Roadmap](08-unified-platform-architecture.md#21-implementation-roadmap) for the complete 6-phase, 18-week roadmap.
 
-See [doc 10: Implementation Plan](10-implementation-plan.md) for hosting options, infrastructure sizing, and detailed cost analysis.
+See [doc 09: Implementation Plan](09-implementation-plan.md) for hosting options, infrastructure sizing, and detailed cost analysis.
 
 **Phase summary:**
 - **Weeks 1-3:** Foundations — loop closes, observability live
@@ -329,7 +329,7 @@ See [doc 10: Implementation Plan](10-implementation-plan.md) for hosting options
 | LLM — complex tasks | Claude Code SDK (subscription) | $400/month (2 seats) | $600/month (3 seats) |
 | LLM — simple ops | Haiku API | ~$20/month | ~$50/month |
 | Embeddings | OpenAI API | ~$10/month | ~$25/month |
-| Infrastructure | DigitalOcean (see doc 10) | ~$150-200/month | ~$350-500/month |
+| Infrastructure | DigitalOcean (see doc 09) | ~$150-200/month | ~$350-500/month |
 | Vector DB | Qdrant (self-hosted on DO) | included in infra | included in infra |
 | Observability | Langfuse (self-hosted) | included in infra | included in infra |
 | Serverless compute | Modal (DSPy nightly) | ~$5-15/month | ~$15-30/month |
